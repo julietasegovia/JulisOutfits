@@ -15,16 +15,16 @@ const infoPatria = document.getElementById('patria-info');
 const infoRest = document.getElementById('rest-info');
 
 const outfits = [outfitJulis, outfitDaily, outfitProf, outfitPatria, outfitRest];
-const infos = [infoDaily, infoProf, infoPatria, infoRest]
+const infos = [infoDaily, infoProf, infoPatria, infoRest];
 
-function showOutfit(selectedOutfit, selectedInfo){
+function showOutfit(selectedOutfit, selectedInfo) {
     outfits.forEach(outfit => {
         outfit.style.display = 'none';
     });
     infos.forEach(info => {
         info.style.display = 'none';
     });
-    selectedOutfit.style.display = 'block';
+    selectedOutfit.style.display = 'flex';
     selectedInfo.style.display = 'block';
 }
 
