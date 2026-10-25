@@ -65,7 +65,14 @@ body {
     background-color: aqua;
     overflow: visible;
     align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     border-radius: 30px;
+}
+
+.infos{
+    display: none;
 }
 
 .choices {

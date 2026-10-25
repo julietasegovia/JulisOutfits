@@ -9,16 +9,26 @@ const outfitProf = document.getElementById('prof');
 const outfitPatria = document.getElementById('patria');
 const outfitRest = document.getElementById('rest');
 
-const outfits = [outfitJulis, outfitDaily, outfitProf, outfitPatria, outfitRest];
+const infoDaily = document.getElementById('daily-info');
+const infoProf = document.getElementById('prof-info');
+const infoPatria = document.getElementById('patria-info');
+const infoRest = document.getElementById('rest-info');
 
-function showOutfit(selectedOutfit){
+const outfits = [outfitJulis, outfitDaily, outfitProf, outfitPatria, outfitRest];
+const infos = [infoDaily, infoProf, infoPatria, infoRest]
+
+function showOutfit(selectedOutfit, selectedInfo){
     outfits.forEach(outfit => {
         outfit.style.display = 'none';
     });
+    infos.forEach(info => {
+        info.style.display = 'none';
+    });
     selectedOutfit.style.display = 'block';
+    selectedInfo.style.display = 'block';
 }
 
-btnDaily.addEventListener('click', () => showOutfit(outfitDaily));
-btnProf.addEventListener('click', () => showOutfit(outfitProf));
-btnPatria.addEventListener('click', () => showOutfit(outfitPatria));
-btnRest.addEventListener('click', () => showOutfit(outfitRest));
+btnDaily.addEventListener('click', () => showOutfit(outfitDaily, infoDaily));
+btnProf.addEventListener('click', () => showOutfit(outfitProf, infoProf));
+btnPatria.addEventListener('click', () => showOutfit(outfitPatria, infoPatria));
+btnRest.addEventListener('click', () => showOutfit(outfitRest, infoRest));
