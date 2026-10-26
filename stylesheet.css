@@ -151,6 +151,13 @@ body {
     text-align: left;
 }
 
+.info-tiny-text-right {
+    flex: 1;
+    font-size: 22px;
+    line-height: 1.3;
+    text-align: right;
+}
+
 .info-imgs {
     width: 350px;
     display: flex;
@@ -196,6 +203,6 @@ body {
     margin-left: 0;
 }
 
-#mate{
+#mate {
     margin-left: -100px;
 }
