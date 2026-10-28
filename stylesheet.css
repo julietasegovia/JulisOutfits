@@ -206,3 +206,32 @@ body {
 #mate {
     margin-left: -100px;
 }
+
+.link{
+    color: rgb(80, 80, 179);
+}
+
+.link:hover{
+    color: rgb(115, 115, 202);
+}
+
+.daily-sticker{
+    width: 200px;
+}
+
+.daily-sticker:hover, .sticker:hover{
+    transform: scale(1.05);
+}
+
+#snoopy{
+    width: 250px;
+    margin-left: -40px;
+}
+
+#tyler{
+    width: 150px;
+}
+
+#daily-stickers{
+    margin-top: -50px;
+}
